@@ -1,9 +1,11 @@
 import React from "react";
+import { IoMdSearch } from "react-icons/io";
 
-const Input = () => {
+export const Input = () => {
   return (
-    <input className="flex w-[567px] min-w-[320px] py-4 px-6 items-center gap-4 rounded-[48px] bg-[#FFF]"></input>
+    <div className="  flex  w-[567px] h-[80px] absolute z-20 rounded-[48px] bg-white  items-center justify-center">
+      <IoMdSearch className="size-[48px] flex fill-gray-300" />
+      <input className=" flex w-[455px] h-[44px]  py-4 focus-visible: outline-none text-black text-[32px]"></input>
+    </div>
   );
 };
-
-export default Input;
